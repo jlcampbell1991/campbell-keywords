@@ -15,5 +15,4 @@ An http4s web app for interacting with the eBay Finding API
 * Commit changes to git
 * `heroku git:remote -a [YOUR_HEROKU_APP]`
 * `heroku stack:set container`
-* `git push heroku master`
-* Follow [Heroku instructions](https://devcenter.heroku.com/articles/deploying-scala) for deploying a Scala app
+* `git push heroku main`
