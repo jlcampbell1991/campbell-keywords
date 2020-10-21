@@ -1,0 +1,3 @@
+build:
+  docker:
+    web: campbell-keywords/target/docker/stage/Dockerfile

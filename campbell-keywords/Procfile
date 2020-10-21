@@ -1,0 +1,1 @@
+web: campbell-keywords/target/universal/stage/bin/campbell-keywords -Dhttp.port=${PORT}

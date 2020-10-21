@@ -1,0 +1,4 @@
+[0m[[0m[0minfo[0m] [0m[0m[32mSessionRoutesTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- GET -> Root / "login"[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- POST -> Root / "login"[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- GET -> Root / "logout""[0m[0m

@@ -1,0 +1,5 @@
+[0m[[0m[0mdebug[0m] [0m[0mCopy resource mappings: [0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/Users/JCamp1991/dev/campbell-keywords/campbell-keywords/src/main/resources/application.conf,/Users/JCamp1991/dev/campbell-keywords/campbell-keywords/target/scala-2.13/classes/application.conf)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/Users/JCamp1991/dev/campbell-keywords/campbell-keywords/src/main/resources/logback.xml,/Users/JCamp1991/dev/campbell-keywords/campbell-keywords/target/scala-2.13/classes/logback.xml)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/Users/JCamp1991/dev/campbell-keywords/campbell-keywords/src/main/resources/assets/javascripts/application.js,/Users/JCamp1991/dev/campbell-keywords/campbell-keywords/target/scala-2.13/classes/assets/javascripts/application.js)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/Users/JCamp1991/dev/campbell-keywords/campbell-keywords/src/main/resources/assets/stylesheets/application.css,/Users/JCamp1991/dev/campbell-keywords/campbell-keywords/target/scala-2.13/classes/assets/stylesheets/application.css)[0m
