@@ -4,6 +4,7 @@ import cats.data._
 import cats.effect.Sync
 import cats.implicits._
 import org.http4s._
+import org.http4s.client._
 import org.http4s.dsl.Http4sDsl
 import org.http4s.headers._
 import org.http4s.HttpRoutes
@@ -26,15 +27,16 @@ trait Routes {
 }
 
 object Routes {
-  private def PublicRoutes[F[_]: Sync: Transactor: Http4sDsl]: HttpRoutes[F] =
+  private def PublicRoutes[F[_]: Sync: Transactor: Http4sDsl: Client]: HttpRoutes[F] =
     UserRoutes.publicRoutes[F] <+>
-      SessionRoutes.publicRoutes[F]
+      SessionRoutes.publicRoutes[F] <+>
+      CompletedItemsRoutes.publicRoutes[F]
 
-  private def AuthedRoutes[F[_]: Sync: Transactor: Http4sDsl]: HttpRoutes[F] =
+  private def AuthedRoutes[F[_]: Sync: Transactor: Http4sDsl: Client]: HttpRoutes[F] =
     UserRoutes.authedRoutes[F] <+>
       SessionRoutes.authedRoutes[F]
 
-  def routes[F[_]: Sync: Transactor](AssetsRoutes: HttpRoutes[F]): HttpRoutes[F] = {
+  def routes[F[_]: Sync: Transactor: Client](AssetsRoutes: HttpRoutes[F]): HttpRoutes[F] = {
     implicit val dsl = new Http4sDsl[F] {}
 
     AssetsRoutes <+>

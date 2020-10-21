@@ -1,2 +1,6 @@
-[0m[[0m[33mwarn[0m] [0m[0m1 deprecation (since 0.20.22); re-run with -deprecation for details[0m
-[0m[[0m[33mwarn[0m] [0m[0mone warning found[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/JCamp1991/dev/campbell-keywords/campbell-keywords/src/main/scala/campbell/keywords/models/CompletedItems.scala:18:37: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : Unit[0m
+[0m[[0m[31merror[0m] [0m[0m required: F[String][0m
+[0m[[0m[31merror[0m] [0m[0m  def call[F[_]: Sync]: F[String] = {}[0m
+[0m[[0m[31merror[0m] [0m[0m                                    ^[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m
