@@ -12,6 +12,7 @@ object UserRoutes extends Routes {
     import dsl._
 
     HttpRoutes.of {
+      case GET -> Root => Ok("YOU'VE MADE IT THUS FAR")
       case GET -> Root / "signup" => Ok(User.add)
       case params @ POST -> Root / "signup" => {
           for {
